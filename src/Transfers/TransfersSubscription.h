@@ -1,4 +1,8 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
+// Copyright (c) 2018 [ ] developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +24,7 @@ public:
   bool advanceHeight(uint32_t height);
   const AccountKeys& getKeys() const;
   bool addTransaction(const TransactionBlockInfo& blockInfo, const ITransactionReader& tx,
-                      const std::vector<TransactionOutputInformationIn>& transfers);
+                      const std::vector<TransactionOutputInformationIn>& transfers, std::vector<std::string>&& messages);
 
   void deleteUnconfirmedTransaction(const Crypto::Hash& transactionHash);
   void markTransactionConfirmed(const TransactionBlockInfo& block, const Crypto::Hash& transactionHash, const std::vector<uint32_t>& globalIndices);

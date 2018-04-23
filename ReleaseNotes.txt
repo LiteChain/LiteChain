@@ -1,101 +1,62 @@
-Release notes 1.1.1
+Release notes 0.0.1
 
-- New API for CryptoNote RPC Wallet
+- fork Github Amajurez/Bytecoin
+- clean up files
 
-Release notes 1.1.0
+Release notes 0.0.1 b0
 
-- CryptoNote RPC Wallet
-- Aggregate multi-addresses for CryptoNote RPC Wallet
-- Fusion transactions
-- Transactions pool synchronization
-- Wallet synchronization speed increase
-- High-level API update
+- fixed Inodes
+- updates p2pnetwork
 
-- Full network layer refactoring
-- New multithreading library
-- Improved console logging
-- JSON RPC improvements
+Release notes 0.0.1 b1
 
-Release notes 1.0.2
+- updates seed and removed checkpoint
 
-- Multisignature with API
-- Low level API
-- High level API improvements
-- Updated block reward scheme
-- Dynamic maximum block size limit
+Release notes 0.0.1 b2
 
-- Instant transaction pool notifications
-- Transaction priority based on tx fee
-- Transactions are returned from tx pools after 24 hours
+- gcc7 small fixed by vkobel
 
-- Fully refactored simplewallet
-- Transaction history for simplewallet
-- Reset command for simplewallet
-- Faster wallet refresh
+Release notes 0.0.1 b3
 
-- Further optimization in daemon RAM consumption
-- Various network health updates
-- Config and CryptoNote forking how-to update
+- added premine[not test yet]
+- fixed hangup in Dispatcher::yield() in Linux by rs-blashyrkh
+- docs: typo nuber to number by JaysonH91
+- rocksdb clean by leviarcoin
+- walletd, not walled by paulmadore
+- fix verification failed by RocksteadyTC
+- change supply and longer difficult target
+- decrease size block. [for prepare split chain method[EvoChain]]
 
-Release notes 1.0.1
+Release notes 0.0.1 b4
 
-- High level API implementation
-- CryptoNight hash function optimization
-- Improvements for wallet JSON RPC API
+- fee and dust dropped to help with mining payouts by Vetro7
+- added ico and pos[not test yet]
+- added travis
+- added modules
+  - cmake v3.10.2
 
-Release notes 0.8.10
+Release notes 0.0.1 b5
 
-- Optimized blockchain storage memory usage
-- Various code improvements
+- added build rainmanp7
+- remove connectivity tool rainmanp7
+- added mandatory
+- bug fixes + karbo support
+- added new monsty as contibutor
+- added branch notetoken
+- remove old beta4 branch
+- added export key
 
-Release notes 0.8.9
+Release notes 0.0.1 b6
 
-- JSON RPC v2.0 compatibility
-- JSON RPC over TCP added
-- Further optimizations
+- ruby bug remove branch
+- scalarmultikey added
+- remove unnecesary premine
 
-Release notes 0.8.8
+Jump to
 
-- Fixed a bug with checkpoints behavior
-- UI improvements for daemon
-- Various updates from our forks
+Release notes 0.1.1 -Ruby Version
 
-Release notes 0.8.7
-
-- OSX support
-- Further optimizations
-
-Release notes 0.8.6
-
-- Simplwallet can set extra for transfers
-- Improvements in JSON RPC for wallet
-- UX improvements in simplewallet
-- Win32 compilation
-
-Release notes 0.8.5
-
-- Port mapping for daemon using UPnP
-- Improvements for daemon JSON RPC API
-
-Release notes 0.8.4
-
-- Formalization of high level API
-- Improvements for wallet JSON RPC API
-
-Release notes 0.8.3
-
-- JSON RPC for wallet
-- fixed bug with blockchain storing
-- fixed bug with correct display of transfer's change 
-- bug fix in simple wallet
-
-Release notes 0.8.2
-
-- now wallet is still working when daemon stores blockchain and can't serve clients; 
-- no-console option for a daemon; 
-- fixed problem with network synchronization; 
-- major bug fix in simple wallet. 
-
-Release notes 0.8.1
-
-Bytecoin project is moved to GitHub
+- fixed ICO,Premine, and Security Issue[Thank XDN Team]
+- cryptotoken Fixed
+- cleanup uneccesary files
+- removed cryptonote-token branch[useless-already merge]

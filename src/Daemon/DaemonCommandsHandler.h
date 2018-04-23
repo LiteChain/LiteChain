@@ -1,4 +1,8 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
+// Copyright (c) 2018 [ ] developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,6 +15,7 @@
 
 namespace CryptoNote {
 class core;
+class Currency;
 class NodeServer;
 }
 
@@ -39,6 +44,7 @@ private:
   std::string get_commands_str();
   bool print_block_by_height(uint32_t height);
   bool print_block_by_hash(const std::string& arg);
+  uint64_t calculatePercent(const CryptoNote::Currency& currency, uint64_t value, uint64_t total);
 
   bool exit(const std::vector<std::string>& args);
   bool help(const std::vector<std::string>& args);
@@ -54,6 +60,7 @@ private:
   bool print_tx(const std::vector<std::string>& args);
   bool print_pool(const std::vector<std::string>& args);
   bool print_pool_sh(const std::vector<std::string>& args);
+  bool print_stat(const std::vector<std::string>& args);
   bool start_mining(const std::vector<std::string>& args);
   bool stop_mining(const std::vector<std::string>& args);
 };

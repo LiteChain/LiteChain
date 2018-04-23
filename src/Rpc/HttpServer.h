@@ -1,4 +1,8 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
+// Copyright (c) 2018 [ ] developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,7 +29,7 @@ public:
 
   HttpServer(System::Dispatcher& dispatcher, Logging::ILogger& log);
 
-  void start(const std::string& address, uint16_t port);
+  void start(const std::string& address, uint16_t port, const std::string& user = "", const std::string& password = "");
   void stop();
 
   virtual void processRequest(const HttpRequest& request, HttpResponse& response) = 0;
@@ -38,11 +42,13 @@ private:
 
   void acceptLoop();
   void connectionHandler(System::TcpConnection&& conn);
+  bool authenticate(const HttpRequest& request) const;
 
   System::ContextGroup workingContextGroup;
   Logging::LoggerRef logger;
   System::TcpListener m_listener;
   std::unordered_set<System::TcpConnection*> m_connections;
+  std::string m_credentials;
 };
 
 }

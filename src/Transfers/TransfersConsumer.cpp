@@ -1,4 +1,8 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
+// Copyright (c) 2018 [ ] developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,6 +14,7 @@
 #include "Common/BlockingQueue.h"
 #include "CryptoNoteCore/CryptoNoteFormatUtils.h"
 #include "CryptoNoteCore/TransactionApi.h"
+#include "CryptoNoteCore/TransactionExtra.h"
 
 #include "IWallet.h"
 #include "INode.h"
@@ -406,6 +411,7 @@ std::error_code createTransfers(
 
       info.amount = amount;
       info.requiredSignatures = out.requiredSignatureCount;
+      info.term = out.term;
     }
 
     transfers.push_back(info);
@@ -494,7 +500,8 @@ void TransfersConsumer::processOutputs(const TransactionBlockInfo& blockInfo, Tr
       assert(subscribtionTxInfo.blockHeight == blockInfo.height);
     }
   } else {
-    updated = sub.addTransaction(blockInfo, tx, transfers);
+    auto messages = get_messages_from_extra(tx.getExtra(), tx.getTransactionPublicKey(), &sub.getKeys().spendSecretKey);
+    updated = sub.addTransaction(blockInfo, tx, transfers, std::move(messages));
     contains = updated;
   }
 }

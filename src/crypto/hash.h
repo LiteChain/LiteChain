@@ -1,4 +1,7 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -34,13 +37,13 @@ namespace Crypto {
 
     cn_context();
     ~cn_context();
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1800
     cn_context(const cn_context &) = delete;
     void operator=(const cn_context &) = delete;
 #endif
 
   private:
-
     void *data;
     friend inline void cn_slow_hash(cn_context &, const void *, size_t, Hash &);
   };

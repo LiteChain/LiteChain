@@ -1,4 +1,8 @@
-// Copyright (c) 2011-2016 The Cryptonote developers
+// Copyright (c) 2011-2017 The Cryptonote developers
+// Copyright (c) 2014-2017 XDN developers
+// Copyright (c) 2016-2017 BXC developers
+// Copyright (c) 2017 Royalties developers
+// Copyright (c) 2018 [ ] developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +24,7 @@ namespace CryptoNote {
 class WalletRequest
 {
 public:
-  typedef std::function<void(std::deque<std::shared_ptr<WalletLegacyEvent>>& events, boost::optional<std::shared_ptr<WalletRequest> >& nextRequest, std::error_code ec)> Callback;
+  typedef std::function<void(std::deque<std::unique_ptr<WalletLegacyEvent>>&, std::unique_ptr<WalletRequest>&, std::error_code)> Callback;
 
   virtual ~WalletRequest() {};
 
@@ -60,6 +64,22 @@ public:
 
 private:
   CryptoNote::Transaction m_tx;
+  Callback m_cb;
+};
+
+class WalletRelayDepositTransactionRequest final: public WalletRequest
+{
+public:
+  WalletRelayDepositTransactionRequest(const Transaction& tx, Callback cb) : m_tx(tx), m_cb(cb) {}
+  virtual ~WalletRelayDepositTransactionRequest() {}
+
+  virtual void perform(INode& node, std::function<void (WalletRequest::Callback, std::error_code)> cb)
+  {
+    node.relayTransaction(m_tx, std::bind(cb, m_cb, std::placeholders::_1));
+  }
+
+private:
+  Transaction m_tx;
   Callback m_cb;
 };
 
