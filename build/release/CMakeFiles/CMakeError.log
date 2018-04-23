@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_111af/fast"
+make[1]: Entering directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_111af.dir/build.make CMakeFiles/cmTC_111af.dir/build
+make[2]: Entering directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_111af.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes    -o CMakeFiles/cmTC_111af.dir/CheckSymbolExists.c.o   -c /root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_111af
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_111af.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes     CMakeFiles/cmTC_111af.dir/CheckSymbolExists.c.o  -o cmTC_111af 
+CMakeFiles/cmTC_111af.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_111af.dir/build.make:97: recipe for target 'cmTC_111af' failed
+make[2]: *** [cmTC_111af] Error 1
+make[2]: Leaving directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_111af/fast' failed
+make[1]: *** [cmTC_111af/fast] Error 2
+make[1]: Leaving directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+
+File /root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed934/fast"
+make[1]: Entering directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ed934.dir/build.make CMakeFiles/cmTC_ed934.dir/build
+make[2]: Entering directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed934.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ed934.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ed934
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed934.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ed934.dir/CheckFunctionExists.c.o  -o cmTC_ed934 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ed934.dir/build.make:97: recipe for target 'cmTC_ed934' failed
+make[2]: *** [cmTC_ed934] Error 1
+make[2]: Leaving directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ed934/fast' failed
+make[1]: *** [cmTC_ed934/fast] Error 2
+make[1]: Leaving directory '/root/coins/DirhamCli/build/release/CMakeFiles/CMakeTmp'
+
+
