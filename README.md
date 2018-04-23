@@ -3,8 +3,6 @@
 
 Copyright (c) 2018 The LiteChain Project
 
-Copyright (c) 2017, The Stellite Project
-
 Copyright (c) 2017, The Electroneum Project
 
 Copyright (c) 2014-2017, The Monero Project
@@ -23,7 +21,7 @@ Portions Copyright (c) 2012-2013, FndNur1Labs/CryptonoteEvo
 
 Litechain is a private, secure, untraceable cryptocurrency.We bring the best from the whole cryptonight space, both from Monero and Electroneum. In Litechain You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so. Litechain is a soft fork of monero trying to implement the best of proposals in the entire privacy coin ecosystem.
 
-**Features:** We are trying to do things no cryptocurrency has ever done before. Full blown small device mining for instance smartphones, tablets, smart tv etc etc are in our scopes. P2P distributed seed lists are the next target after that. All this coupled with the below given features will make Litechain one of the best cryptocurrencies on the market.
+**Features:** P2P distributed seed lists are the next target after that. All this coupled with the below given features will make Litechain one of the best cryptocurrencies on the market.
 
 **Privacy:** Litechain uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
