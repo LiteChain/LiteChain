@@ -1,5 +1,6 @@
 # LiteChain [XLN]
 
+
 Copyright (c) 2018 The LiteChain Project
 
 Copyright (c) 2017, The Stellite Project
@@ -9,8 +10,6 @@ Copyright (c) 2017, The Electroneum Project
 Copyright (c) 2014-2017, The Monero Project
 
 Portions Copyright (c) 2012-2013, FndNur1Labs/CryptonoteEvo
-
-Portions Copyright (c) 2017 The Masari Project
 
 
 ## Development Resources
