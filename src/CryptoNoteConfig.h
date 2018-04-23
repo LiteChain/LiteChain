@@ -33,7 +33,7 @@ const uint8_t  ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION      = 0;
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 7500;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; // size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 6;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
 
 // COIN - number of smallest units in one coin
 const uint64_t POINT                                         = UINT64_C(0); // pow(10, 3)
