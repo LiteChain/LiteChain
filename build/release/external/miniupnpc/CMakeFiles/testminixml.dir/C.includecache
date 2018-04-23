@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/coins/DirhamCli/external/miniupnpc/igd_desc_parse.c
+igd_desc_parse.h
+/root/coins/DirhamCli/external/miniupnpc/igd_desc_parse.h
+stdio.h
+-
+string.h
+-
+
+/root/coins/DirhamCli/external/miniupnpc/igd_desc_parse.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.c
+string.h
+-
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/testminixml.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+igd_desc_parse.h
+/root/coins/DirhamCli/external/miniupnpc/igd_desc_parse.h
+

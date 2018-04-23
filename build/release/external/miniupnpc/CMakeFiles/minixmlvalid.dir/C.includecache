@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.c
+string.h
+-
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixmlvalid.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+

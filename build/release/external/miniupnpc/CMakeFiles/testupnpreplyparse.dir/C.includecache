@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/coins/DirhamCli/external/miniupnpc/bsdqueue.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.c
+string.h
+-
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/testupnpreplyparse.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+upnpreplyparse.h
+/root/coins/DirhamCli/external/miniupnpc/upnpreplyparse.h
+
+/root/coins/DirhamCli/external/miniupnpc/upnpreplyparse.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+upnpreplyparse.h
+/root/coins/DirhamCli/external/miniupnpc/upnpreplyparse.h
+minixml.h
+/root/coins/DirhamCli/external/miniupnpc/minixml.h
+
+/root/coins/DirhamCli/external/miniupnpc/upnpreplyparse.h
+bsdqueue.h
+/root/coins/DirhamCli/external/miniupnpc/bsdqueue.h
+sys/queue.h
+-
+
