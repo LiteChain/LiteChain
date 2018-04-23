@@ -1,16 +1,13 @@
-# LiteChain
+# LiteChain [XLN]
 
-Copyright (c) 2017, The Stellite Project
+
+Copyright (c) 2018 The LiteChain Project
 
 Copyright (c) 2017, The Electroneum Project
 
 Copyright (c) 2014-2017, The Monero Project
 
-Portions Copyright (c) 2012-2013, FndNur1Labs/CryptonoteEvo
-
-Portions Copyright (c) 2017 The Masari Project
-
-Portions Copyright (c) 2018 The LiteChain Project
+Portions Copyright (c) 2012-2018, FndNur1Labs/CryptonoteEvo
 
 
 ## Development Resources
@@ -24,7 +21,7 @@ Portions Copyright (c) 2018 The LiteChain Project
 
 Litechain is a private, secure, untraceable cryptocurrency.We bring the best from the whole cryptonight space, both from Monero and Electroneum. In Litechain You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so. Litechain is a soft fork of monero trying to implement the best of proposals in the entire privacy coin ecosystem.
 
-**Features:** We are trying to do things no cryptocurrency has ever done before. Full blown small device mining for instance smartphones, tablets, smart tv etc etc are in our scopes. P2P distributed seed lists are the next target after that. All this coupled with the below given features will make Litechain one of the best cryptocurrencies on the market.
+**Features:** P2P distributed seed lists are the next target after that. All this coupled with the below given features will make Litechain one of the best cryptocurrencies on the market.
 
 **Privacy:** Litechain uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
@@ -32,7 +29,7 @@ Litechain is a private, secure, untraceable cryptocurrency.We bring the best fro
 
 **Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Litechain is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
-**Timeline:** We are going to be implementing true small hashrate device mining and P2P distributed seed lists without hardcode by Q2 of 2018.
+**Timeline:** We are working in Quarter 2 of 2018 on a GUI and CLI wallet for Windows and Linux in Q3 we want to fork to V7 cryptonight algoritm. Q4 we wand to expand on more exchanges.
 
 ## About this Project
 
