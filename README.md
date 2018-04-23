@@ -1,4 +1,4 @@
-# LiteChain[XLC]
+# LiteChain [XLN]
 
 Copyright (c) 2018 The LiteChain Project
 
