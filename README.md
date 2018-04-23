@@ -15,7 +15,7 @@ Portions Copyright (c) 2018 The LiteChain Project
 
 ## Development Resources
 
-- Web: [LiteChain.online](https://LiteChain.online
+- Web: [LiteChain.online](https://LiteChain.online)
 - Mail: [litechain2018@gmail.com](mailto:litechain2018@gmail.com)
 - GitHub: [https://github.com/Litechain](https://github.com/LiteChain)
 - Blockexplorer: [explorer.litechain.online](https://explorer.litechain.online)
