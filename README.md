@@ -17,7 +17,8 @@ Portions Copyright (c) 2017 The Masari Project
 Project LiteChain started on 20-04-2018
 
 Development Resources
-Web: lite.cash
+
+Web: https://litechain.cash
 
 Mail: LiteChain2018@gmail.com
 
