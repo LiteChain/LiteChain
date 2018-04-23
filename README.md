@@ -32,7 +32,7 @@ Litechain is a private, secure, untraceable cryptocurrency.We bring the best fro
 
 **Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Litechain is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
-**Timeline:** We are going to be implementing true small hashrate device mining and P2P distributed seed lists without hardcode by Q2 of 2018.
+**Timeline:** We are working in Quarter 2 of 2018 on a GUI and CLI wallet for Windows and Linux in Q3 we want to fork to V7 cryptonight algoritm. Q4 we wand to expand on more exchanges.
 
 ## About this Project
 
