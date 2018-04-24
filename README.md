@@ -11,10 +11,11 @@ Portions Copyright (c) 2012-2018, FndNur1Labs / CryptonoteEvo
 ## Development Resources
 
 - Web: [LiteChain.online](https://LiteChain.online)
-- Mail: [litechain2018@gmail.com](mailto:litechain2018@gmail.com)
 - GitHub: [https://github.com/Litechain](https://github.com/LiteChain)
-- Blockexplorer: [explorer.litechain.online](https://explorer.litechain.online)
+- Bitcointalk [Bitcointalk.LiteChain](https://bitcointalk.org/index.php?topic=3389537.msg35509971#msg35509971)
+- Mail: [litechain2018@gmail.com](mailto:litechain2018@gmail.com)
 - Telegram: [LiteChain_EN](https://t.me/LiteChain_EN)
+- Blockexplorer: [explorer.litechain.online](https://explorer.litechain.online)
 
 ## Introduction
 
