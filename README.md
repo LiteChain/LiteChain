@@ -3,11 +3,9 @@
 
 Copyright (c) 2018 The LiteChain Project
 
-Copyright (c) 2017, The Electroneum Project
-
 Copyright (c) 2014-2017, The Monero Project
 
-Portions Copyright (c) 2012-2018, FndNur1Labs/CryptonoteEvo
+Portions Copyright (c) 2012-2018, FndNur1Labs / CryptonoteEvo
 
 
 ## Development Resources
@@ -16,6 +14,7 @@ Portions Copyright (c) 2012-2018, FndNur1Labs/CryptonoteEvo
 - Mail: [litechain2018@gmail.com](mailto:litechain2018@gmail.com)
 - GitHub: [https://github.com/Litechain](https://github.com/LiteChain)
 - Blockexplorer: [explorer.litechain.online](https://explorer.litechain.online)
+- Telegram: [LiteChain_EN](https://t.me/LiteChain_EN)
 
 ## Introduction
 
