@@ -24,7 +24,7 @@ const uint64_t CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE           = 10;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 30;
 
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(210000000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(2250000000);
 
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 0;
 const size_t   ZAWY_DIFFICULTY_V2                            = 1;
@@ -36,8 +36,8 @@ const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2;
 
 // COIN - number of smallest units in one coin
-const uint64_t POINT                                         = UINT64_C(30); // pow(10, 3)
-const uint64_t COIN                                          = UINT64_C(60000000); // pow(10, 6)
+const uint64_t POINT                                         = UINT64_C(60); // pow(10, 3)
+const uint64_t COIN                                          = UINT64_C(112250000); // pow(10, 6)
 const uint64_t MINIMUM_FEE                                   = UINT64_C(1500); // pow(10, 4)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(500); // pow(10, 4)
 
@@ -59,7 +59,7 @@ const uint64_t DEPOSIT_MIN_AMOUNT                            = 99999999999 * COI
 const uint32_t DEPOSIT_MIN_TERM                              = 22000; // ~1 month
 const uint32_t DEPOSIT_MAX_TERM                              = 1 * 12 * 22000; // ~1 year
 const uint64_t DEPOSIT_MIN_TOTAL_RATE_FACTOR                 = 0; // rate is constant
-const uint64_t DEPOSIT_MAX_TOTAL_RATE                        = 5; // percentage rate for DEPOSIT_MAX_TERM
+const uint64_t DEPOSIT_MAX_TOTAL_RATE                        = 20; // percentage rate for DEPOSIT_MAX_TERM
 static_assert(DEPOSIT_MIN_TERM > 0, "Bad DEPOSIT_MIN_TERM");
 static_assert(DEPOSIT_MIN_TERM <= DEPOSIT_MAX_TERM, "Bad DEPOSIT_MAX_TERM");
 static_assert(DEPOSIT_MIN_TERM * DEPOSIT_MAX_TOTAL_RATE > DEPOSIT_MIN_TOTAL_RATE_FACTOR, "Bad DEPOSIT_MIN_TOTAL_RATE_FACTOR or DEPOSIT_MAX_TOTAL_RATE");
@@ -101,9 +101,9 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 } // parameters
 
-const uint64_t START_BLOCK_REWARD                            = (UINT64_C(200) * parameters::POINT);
+const uint64_t START_BLOCK_REWARD                            = (UINT64_C(600) * parameters::POINT + UINT64_C(500));
 const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(0) * parameters::COIN); // 20.4 billion ICO
-const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(7500) * parameters::COIN);
+const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(15000) * parameters::COIN);
 const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
 
 const char     CRYPTONOTE_NAME[]                             = "LiteChain";
