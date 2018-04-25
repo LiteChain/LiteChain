@@ -107,7 +107,7 @@ const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(15000) 
 const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
 
 const char     CRYPTONOTE_NAME[]                             = "LiteChain";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "011201ff0001a9a307029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019f63caf267343b471cfbafd4f7af1ec3e684060ae18641656e480092d4b3dfaf";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001949d02029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121010609c134b1b5aa234b7f5962c7e7753cb60757e60e915225525712c60cb994a6";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1496764095;
 
