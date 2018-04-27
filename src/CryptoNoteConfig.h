@@ -101,7 +101,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 } // parameters
 
-const uint64_t START_BLOCK_REWARD                            = (UINT64_C(2062) * parameters::POINT);
+const uint64_t START_BLOCK_REWARD                            = (UINT64_C(2083334) * parameters::POINT);
 const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(0) * parameters::COIN); // 20.4 billion ICO
 const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(15000) * parameters::COIN);
 const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
@@ -141,8 +141,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "0000000000000000000000000000000000000000000000000000000000000000";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "144.201.114.1:17236",
-  "95.201.116.2:17236",
+  "195.201.114.17:17236", 
+  "195.201.116.84:17236",
 
 
 };
