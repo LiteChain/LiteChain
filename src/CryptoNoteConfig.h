@@ -41,7 +41,7 @@ const uint64_t COIN                                          = UINT64_C(11225000
 const uint64_t MINIMUM_FEE                                   = UINT64_C(1500); // pow(10, 4)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(500); // pow(10, 4)
 
-const uint64_t DIFFICULTY_TARGET                             = 320; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 const size_t   DIFFICULTY_WINDOW                             = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
 const size_t   DIFFICULTY_WINDOW_V1                          = DIFFICULTY_WINDOW;
@@ -101,13 +101,13 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 } // parameters
 
-const uint64_t START_BLOCK_REWARD                            = (UINT64_C(2083334) * parameters::POINT);
+const uint64_t START_BLOCK_REWARD                            = (UINT64_C(2083) * parameters::POINT);
 const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(0) * parameters::COIN); // 20.4 billion ICO
 const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(15000) * parameters::COIN);
 const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
 
 const char     CRYPTONOTE_NAME[]                             = "LiteChain";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001f8c904029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210108f18de65d5dbee5a606c4e43c89ec9a3b64311c59f192004fd9c770dbdb29af";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1496764095;
 
@@ -141,8 +141,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "0000000000000000000000000000000000000000000000000000000000000000";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "144.201.114.1:17236", 
-  "95.201.116.2:17236",
+  "195.201.114.17:17236",
+  "195.201.116.84:17236",
 
 
 };
