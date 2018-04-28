@@ -107,7 +107,7 @@ const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(15000) 
 const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
 
 const char     CRYPTONOTE_NAME[]                             = "LiteChain";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001b4d007029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101cb9ef54f6728c8a0bda7fe536b0b79be3b7851d18d0c0cf7e76b077d9bb50885";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1496764095;
 
@@ -141,8 +141,9 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "0000000000000000000000000000000000000000000000000000000000000000";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "144.201.114.1:17236",
-  "95.201.116.2:17236",
+  "195.201.114.17:17236",
+  "195.201.116.84:17236",
+
 
 
 
